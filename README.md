@@ -4,7 +4,7 @@ Biblioteca con funciones escritas en JavaScript que proporciona varias funcional
 
 Finalmente, las puedes incluir en un proyecto sin depender de una estructura en particular.
 
-1. Menu Hamburguesa 
+## 1. Menu Hamburguesa 
 
 Menu de hamburguesa que muestra el menu completo del sitio web.
 
