@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap');
+@font-face {
+  font-family: clockStyle;
+  src: url(../fonts/clock.ttf);
+}
 
 :root {
   --primary-color: #1FFF93;
@@ -150,6 +154,7 @@ main .section {
 
 main .section h2 {
   text-align: center;
+  padding: 2rem;
 }
 
 @media screen and (max-width: 768px) {

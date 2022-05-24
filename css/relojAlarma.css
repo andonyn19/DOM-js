@@ -1,0 +1,20 @@
+.contenedor-reloj {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.contenedor-reloj > button {
+  width: 250px;
+}
+
+#reloj {
+  display: block;
+  width: 100%;
+  height: 100px;
+  font-family: clockStyle;
+  font-size: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
