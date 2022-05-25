@@ -6,14 +6,14 @@ const d = document
  */
 
 function darkModeBtn(btn) {
+
   const $elementsDark = d.querySelectorAll("[data-dark]"),
-    $elementsLight = d.querySelectorAll("[data-light]"),
     $btn = d.querySelector(btn),
     moon = "🌙",
     sun = "🔆"
 
   $btn.textContent = moon;
-
+  
   //Main function 
 
   const btnContent = (textContent) => {
@@ -25,20 +25,24 @@ function darkModeBtn(btn) {
       element.style.transition = ".3s ease-in-out";
     })
 
-    $elementsLight.forEach(element => {
-      element.classList.toggle("defaultTheme")
-      element.style.transition = ".3s ease-in-out";
-    })
-
-    textContent === moon ? $btn.textContent = sun : $btn.textContent = moon
+    textContent === moon ? $btn.textContent = sun : $btn.textContent = moon;
   }
 
   d.addEventListener("click", e => {
 
     if(e.target === $btn){
       btnContent($btn.textContent);
+      localStorage.getItem("theme") === "light" ? localStorage.setItem("theme", "dark") : localStorage.setItem("theme", "light");
     }
 
+  })
+
+  d.addEventListener("DOMContentLoaded", _  => {
+
+    if(localStorage.getItem("theme") === null) localStorage.setItem("theme", "light");
+    
+    if(localStorage.getItem("theme") === "dark") btnContent($btn.textContent);
+    
   })
 
 }

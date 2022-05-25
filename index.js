@@ -14,5 +14,6 @@ d.addEventListener("DOMContentLoaded",e =>{
   alarma("activar-alarma", "desactivar-alarma", "./alarm.mp3");
   cuentaRegresiva("countdown", "2023, 03, 11");
   scrollBackToTop(".scroll");
-  darkModeBtn(".dark-modeBtn");
 })
+
+darkModeBtn(".dark-modeBtn");
