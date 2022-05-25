@@ -1,5 +1,11 @@
 const d = document 
 
+/**
+ * 
+ * @param {String} idElemento Elemento donde se va a imprimir la info
+ * @param {String} fecha Fecha a llegar
+ */
+
 function cuentaRegresiva (idElemento, fecha) {
   const $id = d.getElementById(idElemento),
     $fecha = new Date(fecha).getTime()
