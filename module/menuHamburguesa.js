@@ -14,9 +14,11 @@ function menuHamburguesa (hamburgerBtn, panelCompleto, listaPanel) {
   d.addEventListener("click", e =>{
     if(e.target === $hamburgerBtn || e.target.matches(`${hamburgerBtn} > *`)){
       $panelCompleto.classList.toggle("active")
+      $hamburgerBtn.classList.toggle("is-active")
     }
     if(e.target.matches(`${listaPanel} > *`)){
       $panelCompleto.classList.toggle("active")
+      $hamburgerBtn.classList.toggle("is-active")
     }
   })  
 }
