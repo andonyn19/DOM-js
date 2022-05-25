@@ -44,3 +44,17 @@ Alarma sonora, sonará 2 segundos una vez es inicializada.
 - Date Object.
 - SetTimeOut.
 - Audio tag.
+
+## 3. Cuenta regresiva
+
+Cuenta regresiva hasta el dia de mi cumpleaños!
+
+`@param {String} idElemento Elemento donde se va a imprimir la info`
+
+`@param {String} fecha Fecha a llegar`
+
+- Date Object.
+- Resto (%).
+
+Kinda tricky, ngl.
+
