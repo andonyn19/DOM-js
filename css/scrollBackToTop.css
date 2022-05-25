@@ -1,0 +1,26 @@
+.scroll {
+  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  right: calc(7rem + 1vw);
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 0 ;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+
+.scroll:hover {
+  background-color: var(--primary-modal-color);
+}
+ 
+.scroll.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
