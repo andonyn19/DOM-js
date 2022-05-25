@@ -1,14 +1,12 @@
 # Librería JS
 
-Biblioteca con funciones escritas en JavaScript que proporciona varias funcionalidades, asimismo son fáciles de implementar.
-
-Finalmente, las puedes incluir en un proyecto sin depender de una estructura en particular.
+Biblioteca con funciones escritas en **JavaScript** que proporciona varias funcionalidades, asimismo son **fáciles** de implementar.
 
 ## 1. Menu Hamburguesa 
 
-Menu de hamburguesa que muestra el menu completo del sitio web.
+Menu de **hamburguesa** que muestra el menu completo del sitio web.
 
-Importar "HamburgerCSS", puedes utilizar cdn.js.
+Importar "HamburgerCSS", puedes utilizar **cdn.js.**
 
 `@param {String} hamburgerBtn: Boton del menu`
 
@@ -24,7 +22,7 @@ Class active: transform: translateX(0);
 
 ## 2. Reloj Digital y Alarma Sonora
 
-Reloj digital que muestra los minutos y segundos despues de inicializar con un botón. 
+Reloj digital que muestra los **dias**, **minutos** y **segundos** despues de inicializar con un botón. 
 
 `@param {String} idActivar Id elemento -> btn activar`
 
@@ -32,7 +30,7 @@ Reloj digital que muestra los minutos y segundos despues de inicializar con un b
 
 `@param {String} idElement Elemento donde se va a imprimir la hora`
 
-Alarma sonora, sonará 2 segundos una vez es inicializada.
+Alarma sonora, **sonará** 2 segundos una vez es inicializada.
 
 `@param {String} idActivar Id elemento -> btn activar`
 
@@ -64,10 +62,23 @@ Uno de mis ejercicios favoritos.
 
 `@param {String} scrollBtn Clase del boton "Back to Top"`
 
-A pesar de ser una función que recibe solo 1 parametro y son pocas lineas de codigo, siento que es un ejercio muy util e interesante.
+A pesar de ser una función que recibe solo 1 **parametro** y son pocas lineas de codigo, siento que es un ejercio muy **util** e **interesante**.
 
 - Evento "Scroll".
-- Window.pageYOffset (Numero de pixeles alejado del axis-vertical/top).
+- Window.**pageYOffset** (Numero de pixeles alejado del axis-vertical/top).
 - Agregar y eliminar clases (hidden).
-- Window.scrollTo({options}) (Desplazar a punto especifico).
+- Window.**scrollTo**({options}) (Desplazar a punto especifico).
+
+## 5. Dark mode button
+
+El efecto favorito de muchos, me incluyo, utilizando **HTML, CSS** Y algo de **JavaScript** es fácil de implementar.
+
+`@param {String} btn Clase del Dark mode Btn`
+
+Para aplicar el modo oscuro debes utilizar metadatos en el elemento HTML en especifico **[meta-dark]**.
+
+Para los elementos que NO quieres que se modifiquen con el modo oscuro (cabeceras, background-colors), aplique **[meta-light]**.
+
+- Basicamente, toggle de clases.
+- QuerySelector ("**[meta-datos]**").
 
