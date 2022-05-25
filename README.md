@@ -58,3 +58,16 @@ Cuenta regresiva hasta el dia de mi cumpleaños!
 
 Kinda tricky, ngl.
 
+## 4. Scroll "Back to Top Button"
+
+Uno de mis ejercicios favoritos.
+
+`@param {String} scrollBtn Clase del boton "Back to Top"`
+
+A pesar de ser una función que recibe solo 1 parametro y son pocas lineas de codigo, siento que es un ejercio muy util e interesante.
+
+- Evento "Scroll".
+- Window.pageYOffset (Numero de pixeles alejado del axis-vertical/top).
+- Agregar y eliminar clases (hidden).
+- Window.scrollTo({options}) (Desplazar a punto especifico).
+
