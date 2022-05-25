@@ -1,0 +1,29 @@
+.dark-modeBtn {
+  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  left: 1vw;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 0 ;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #323031;
+}
+
+.defaultTheme{
+  color: #323031;
+}
+
+.dark-modeBtn.dark{
+  background-color: var(--primary-color);
+}
+
+.darkTheme {
+  background-color: #323031;
+  color: var(--background);
+}
