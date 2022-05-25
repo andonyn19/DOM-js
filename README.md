@@ -77,8 +77,31 @@ El efecto favorito de muchos, me incluyo, utilizando **HTML, CSS** Y algo de **J
 
 Para aplicar el modo oscuro debes utilizar metadatos en el elemento HTML en especifico **[meta-dark]**.
 
-Para los elementos que NO quieres que se modifiquen con el modo oscuro (cabeceras, background-colors), aplique **[meta-light]**.
-
 - Basicamente, toggle de clases.
 - QuerySelector ("**[meta-datos]**").
 
+## 6. Aplicando LocalStorage al "Modo Oscuro"
+
+Para eso usaremos la propiedad de **Window**.**localStorage**, esto nos va a permitir almacenar la informacion. 
+
+https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+
+Comenzamos, la primera vez que ingresamos al sitio web, no existe la llave (key) "theme" en localStorage, por lo que inicializamos como "default" o **"light"**:
+
+<pre><code>if (localStorage.getItem("theme") === null) localStorage.setItem("theme", "light")</code></pre>
+
+Luego, cuando realizamos un evento "click" con el **"darkModeBtn"**, el valor de la llave (key) va a cambiar utilizando un operador ternario.
+
+Si leemos la llave (key) "theme" y nos devuelve como resultado **"light"**, entonces su nuevo valor sera **"dark"**, de mismo modo, al ocurrir este evento, se esta aplicando o quitando el modo oscuro.
+
+
+<pre><code>localStorage.getItem("theme") === "light" ? 
+
+localStorage.setItem("theme", "dark") : 
+
+localStorage.setItem("theme", "light")</code></pre>
+
+Finalmente, si refrescamos la pagina, el valor de la llave (key) se guarda, pero no aplica ningun cambio, para esto debemos agregar una condicional, **SOLO** si el valor que devuelve la llave "theme" es **dark**.
+
+<pre><code>if(localStorage.getItem("theme") === "dark") btnContent($btn.textContent);
+</code></pre>
