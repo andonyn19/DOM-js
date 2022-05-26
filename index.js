@@ -9,6 +9,7 @@ import scrollBackToTop from './module/scrollBackToTop.js';
 import darkModeBtn from './module/darkModeBtn.js';
 import responsiveDesign from './module/responsiveDesign.js';
 import responsiveTester from './module/responsiveTester.js';
+import userAgent from './module/userAgent.js';
 
 d.addEventListener("DOMContentLoaded", e => {
   menuHamburguesa(".hamburger", ".panel", ".menu");
@@ -18,7 +19,8 @@ d.addEventListener("DOMContentLoaded", e => {
   scrollBackToTop(".scroll");
   responsiveDesign("(min-width: 600px)", "youtube", "Texto movil", "Texto desktop");
   responsiveDesign("(min-width: 600px)", "maps", "Texto movil", "Texto desktop");
-  responsiveTester("responsive-tester")
+  responsiveTester("responsive-tester");
+  userAgent("uaContent")
 })
 
 darkModeBtn(".dark-modeBtn");
