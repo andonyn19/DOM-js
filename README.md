@@ -164,3 +164,12 @@ https://lenguajejs.com/javascript/dom/insertar-elementos-dom/#los-m%C3%A9todos-i
 
 - InsertAdjacentElement.
 - Remove child.
+
+## 11. Geolocalizacion API
+
+Nos permite conocer las coordenadas del usuario, al **aceptar** el permiso, se puede obtener la **latitud**, **longitud**, etc.
+
+El metodo **getCurrentPosition** recibe 3 argumentos; el metodo de exito, de error y un objeto de opciones (presision alta, tiempo maximo de respuesta, cache).
+
+<pre><code> n.geolocation.getCurrentPosition(successCallBack, errorCallBack, options);</code></pre>
+
