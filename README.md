@@ -127,3 +127,18 @@ Creamos una variable para el breakpoint:
 Luego, se asigna un evento "change" que se dispara cuando confirma un cambio:
 
 <pre><code>  myQuery.addEventListener("change", (e) => displayContent(e))</code></pre>
+
+
+## 8. Responsive Tester 
+
+Ejercicio "simple", recibimos los valores del formulario con el atributo **"name"** de cada **input**.
+
+`@param {String} form Id del formulario`
+
+https://www.javatpoint.com/javascript-window-close-method#:~:text=JavaScript%20provides%20an%20in%2Dbuilt,does%20not%20contain%20any%20parameter.
+
+<pre><code> let newWindow = Window.open(URL, name, newWindowConfiguration)
+
+newWindow.close()
+</code></pre>
+
