@@ -1,5 +1,5 @@
 const d = document,
-  w = window, 
+  w = window,
   n = navigator
 
 import menuHamburguesa from './module/menuHamburguesa.js';
@@ -8,15 +8,17 @@ import cuentaRegresiva from './module/cuentaRegresiva.js';
 import scrollBackToTop from './module/scrollBackToTop.js';
 import darkModeBtn from './module/darkModeBtn.js';
 import responsiveDesign from './module/responsiveDesign.js';
+import responsiveTester from './module/responsiveTester.js';
 
-d.addEventListener("DOMContentLoaded",e =>{
+d.addEventListener("DOMContentLoaded", e => {
   menuHamburguesa(".hamburger", ".panel", ".menu");
   relojDigital("activar-reloj", "desactivar-reloj", "reloj");
   alarma("activar-alarma", "desactivar-alarma", "./alarm.mp3");
   cuentaRegresiva("countdown", "2023, 03, 11");
   scrollBackToTop(".scroll");
-  responsiveDesign("(min-width: 600px)", "youtube", "Texto movil", "Texto desktop")
-  responsiveDesign("(min-width: 600px)", "maps", "Texto movil", "Texto desktop")
+  responsiveDesign("(min-width: 600px)", "youtube", "Texto movil", "Texto desktop");
+  responsiveDesign("(min-width: 600px)", "maps", "Texto movil", "Texto desktop");
+  responsiveTester("responsive-tester")
 })
 
 darkModeBtn(".dark-modeBtn");
