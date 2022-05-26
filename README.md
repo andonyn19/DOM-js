@@ -126,8 +126,10 @@ Creamos una variable para el breakpoint:
 
 Luego, se asigna un evento "change" que se dispara cuando confirma un cambio:
 
-<pre><code>  myQuery.addEventListener("change", (e) => displayContent(e))</code></pre>
+<pre><code> myQuery.addEventListener("change", (e) => displayContent(e))</code></pre>
 
+- Window.matchMedia(query).
+- Evento "change"
 
 ## 8. Responsive Tester 
 
@@ -137,10 +139,12 @@ Ejercicio "simple", recibimos los valores del formulario con el atributo **"name
 
 https://www.javatpoint.com/javascript-window-close-method#:~:text=JavaScript%20provides%20an%20in%2Dbuilt,does%20not%20contain%20any%20parameter.
 
-<pre><code> let newWindow = Window.open(URL, name, newWindowConfiguration)
+<pre><code>let newWindow = Window.open(URL, name, newWindowConfiguration)
 
 newWindow.close()
 </code></pre>
+
+- Window.open().
 
 ## 9. User agent
 
@@ -148,3 +152,15 @@ La propiedad **Navigator.userAgent** nos devuelve una cadena de texto con inform
 
 Principalmente nos permite conocer desde que dispositivo visitan nuestro sitio web, para poder mostrar contenido exclusivo o redireccionar.
 
+- Regex.
+
+## 10. Estado de la red
+
+Nos permite conocer el estado de la red, esta función no recibe ningun parametro, lo que si necesitamos es el evento **online/offline** de la interfaz Window.
+
+<pre><code>window.addEventListener(online/offline , _ => (funcion))</code></pre>
+
+https://lenguajejs.com/javascript/dom/insertar-elementos-dom/#los-m%C3%A9todos-insertadjacent
+
+- InsertAdjacentElement.
+- Remove child.
