@@ -1,0 +1,25 @@
+.online,
+.offline {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  padding: 1rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #1b5e20;
+  color: #fff;
+}
+
+.offline {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  padding: 1rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+   background-color: #b71c1c;
+  color: #fff;
+ 
+}

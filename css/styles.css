@@ -133,6 +133,10 @@ body {
   background-color: var(--background);
 }
 
+.header{
+  height: 90px;
+}
+
 .header h1 {
   position: fixed;
   width: 100%;
@@ -158,6 +162,7 @@ main .section h2 {
 }
 
 @media screen and (max-width: 768px) {
+  .header,
   .header h1 {
     height: 60px;
   }
