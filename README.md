@@ -105,3 +105,25 @@ Finalmente, si refrescamos la pagina, el valor de la llave (key) se guarda, pero
 
 <pre><code>if(localStorage.getItem("theme") === "dark") btnContent($btn.textContent);
 </code></pre>
+
+## 7. Responsible Responsive Design
+
+Leer blog:
+
+https://webdevetc.com/blog/matchmedia-events-for-window-resizes/
+
+`@param {query} query Breakpoint`
+
+`@param {String} element Id del elemento a modificar`
+
+`@param {String} mobileContent Contenido cuando no se cumpla la condicion`
+
+`@param {String} desktopContent Contenido cuando se cumpla la condicion`
+
+Creamos una variable para el breakpoint:
+
+<pre><code>const myQuery = w.matchMedia(query)</code></pre>
+
+Luego, se asigna un evento "change" que se dispara cuando confirma un cambio:
+
+<pre><code>  myQuery.addEventListener("change", (e) => displayContent(e))</code></pre>
