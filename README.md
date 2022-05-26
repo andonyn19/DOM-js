@@ -142,3 +142,9 @@ https://www.javatpoint.com/javascript-window-close-method#:~:text=JavaScript%20p
 newWindow.close()
 </code></pre>
 
+## 9. User agent
+
+La propiedad **Navigator.userAgent** nos devuelve una cadena de texto con informacion del usuario relacionado al navegador/SO.
+
+Principalmente nos permite conocer desde que dispositivo visitan nuestro sitio web, para poder mostrar contenido exclusivo o redireccionar.
+
