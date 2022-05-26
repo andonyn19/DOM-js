@@ -11,6 +11,7 @@ import responsiveDesign from './module/responsiveDesign.js';
 import responsiveTester from './module/responsiveTester.js';
 import userAgent from './module/userAgent.js';
 import estadoRed from './module/estadoRed.js';
+import geolocalizacion from './module/geolocalizacion.js';
 
 d.addEventListener("DOMContentLoaded", e => {
   menuHamburguesa(".hamburger", ".panel", ".menu");
@@ -22,7 +23,8 @@ d.addEventListener("DOMContentLoaded", e => {
   responsiveDesign("(min-width: 600px)", "maps", "Texto movil", "Texto desktop");
   responsiveTester("responsive-tester");
   userAgent("uaContent");
-  estadoRed()
+  geolocalizacion("geoContent");
 })
 
 darkModeBtn(".dark-modeBtn");
+estadoRed();
