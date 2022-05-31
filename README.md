@@ -202,7 +202,7 @@ Obtiene 1 elemento **random** de una lista de elementos.
 
 ## 14. Responsive slider
 
-Responsive slider que se puede aplicar en cualqueir sitio aplicando las siguientes reglas:
+Responsive slider que se puede aplicar a todo sitio web aplicando las siguientes reglas:
 
 - Cada slide: class "slide"
 - Boton siguiente: class "next"
