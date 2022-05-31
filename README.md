@@ -71,7 +71,7 @@ A pesar de ser una función que recibe solo 1 **parametro** y son pocas lineas d
 
 ## 5. Dark mode button
 
-El efecto favorito de muchos, me incluyo, utilizando **HTML, CSS** Y algo de **JavaScript** es fácil de implementar.
+El efecto favorito de muchos, creado utilizando **HTML, CSS** Y algo de **JavaScript**, es fácil de implementar.
 
 `@param {String} btn: Clase del Dark mode Btn`
 
@@ -177,9 +177,9 @@ El metodo **getCurrentPosition** recibe 3 argumentos; el metodo de exito, de err
 
 Nos permite filtrar una lista de elementos con el valor que escribamos en el elemento **input**. 
 
- `@param {String} input: Referencia al input que va a buscar`
+`@param {String} input: Referencia al input que va a buscar`
 
- `@param {String} selector: Selector que va a buscar en propiedad textContent`
+`@param {String} selector: Selector que va a buscar en propiedad textContent`
 
 Dependiendo de el valor que se ingresa en la etiqueta input:
 
@@ -188,4 +188,15 @@ Dependiendo de el valor que se ingresa en la etiqueta input:
 Se elimina o agrega la clase **"filter"**
 
 <pre><code>card.classList.remove("filter") || card.classList.add("filter")</code></pre>
+
+## 13. Sorteo digital
+
+Obtiene 1 elemento **random** de una lista de elementos.
+
+`@param {String} list: Selector valido para CSS`
+
+`@param {String} btn: Btn del sorteo`
+
+- Math.random()
+- CSS Selectors.
 
