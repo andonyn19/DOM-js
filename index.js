@@ -13,6 +13,7 @@ import userAgent from './module/userAgent.js';
 import estadoRed from './module/estadoRed.js';
 import geolocalizacion from './module/geolocalizacion.js';
 import filter from './module/filter.js';
+import sorteoDigital from './module/sorteoDigital.js';
 
 d.addEventListener("DOMContentLoaded", e => {
   menuHamburguesa(".hamburger", ".panel", ".menu");
@@ -26,6 +27,7 @@ d.addEventListener("DOMContentLoaded", e => {
   userAgent("uaContent");
   geolocalizacion("geoContent");
   filter(".card-filter", ".card");
+  sorteoDigital(".list > *", ".sorteoBtn");
 })
 
 darkModeBtn(".dark-modeBtn");
