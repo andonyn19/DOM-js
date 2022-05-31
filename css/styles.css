@@ -150,7 +150,7 @@ body {
 }
 
 main .section {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 90px;
   max-width: var(--container-width);
   margin: 0 auto;

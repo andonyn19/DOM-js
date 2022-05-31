@@ -12,6 +12,7 @@ import responsiveTester from './module/responsiveTester.js';
 import userAgent from './module/userAgent.js';
 import estadoRed from './module/estadoRed.js';
 import geolocalizacion from './module/geolocalizacion.js';
+import filter from './module/filter.js';
 
 d.addEventListener("DOMContentLoaded", e => {
   menuHamburguesa(".hamburger", ".panel", ".menu");
@@ -24,6 +25,7 @@ d.addEventListener("DOMContentLoaded", e => {
   responsiveTester("responsive-tester");
   userAgent("uaContent");
   geolocalizacion("geoContent");
+  filter(".card-filter", ".card");
 })
 
 darkModeBtn(".dark-modeBtn");
