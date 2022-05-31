@@ -200,3 +200,11 @@ Obtiene 1 elemento **random** de una lista de elementos.
 - Math.random()
 - CSS Selectors.
 
+## 14. Responsive slider
+
+Responsive slider que se puede aplicar en cualqueir sitio aplicando las siguientes reglas:
+
+- Cada slide: class "slide"
+- Boton siguiente: class "next"
+- Boton anterior: class "previous"
+
