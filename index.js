@@ -16,6 +16,7 @@ import filter from './module/filter.js';
 import sorteoDigital from './module/sorteoDigital.js';
 import responsiveSlider from './module/responsiveSlider.js';
 import scrollSpy from './module/scrollSpy.js';
+import videoInteligente from './module/videoInteligente.js';
 
 d.addEventListener("DOMContentLoaded", e => {
   menuHamburguesa(".hamburger", ".panel", ".menu");
@@ -32,6 +33,7 @@ d.addEventListener("DOMContentLoaded", e => {
   sorteoDigital(".list > *", ".sorteoBtn");
   responsiveSlider();
   scrollSpy();
+  videoInteligente();
 })
 
 darkModeBtn(".dark-modeBtn");
