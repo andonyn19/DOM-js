@@ -1,0 +1,42 @@
+@media screen and (min-width: 1024px) {
+  body {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 90px auto;
+    grid-template-areas: "header header"
+                          "panel main";
+  }
+
+  .header h1 {
+    grid-area: body;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  .panel {
+    grid-area: panel;
+    position: fixed;
+    top: 90px;
+    width: 15%;
+    transform: translateX(0);
+    font-size: 1.6rem;
+  }
+  
+  .menu a:hover,
+  .menu a.active {
+    background-color: var(--primary-modal-color);
+    color: var(--second-color)
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .dark-modeBtn {
+    left: initial;
+    right: 1vw;
+  }
+
+}

@@ -15,6 +15,7 @@ import geolocalizacion from './module/geolocalizacion.js';
 import filter from './module/filter.js';
 import sorteoDigital from './module/sorteoDigital.js';
 import responsiveSlider from './module/responsiveSlider.js';
+import scrollSpy from './module/scrollSpy.js';
 
 d.addEventListener("DOMContentLoaded", e => {
   menuHamburguesa(".hamburger", ".panel", ".menu");
@@ -30,6 +31,7 @@ d.addEventListener("DOMContentLoaded", e => {
   filter(".card-filter", ".card");
   sorteoDigital(".list > *", ".sorteoBtn");
   responsiveSlider();
+  scrollSpy();
 })
 
 darkModeBtn(".dark-modeBtn");
