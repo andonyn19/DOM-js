@@ -27,7 +27,7 @@ function scrollSpy() {
    
   //Creando el observador
   const observer = new IntersectionObserver(callback, params);
-  console.log(observer)
+  //console.log(observer)
 
   //Asignando a un elemento que va a "observar"
   $section.forEach(section => observer.observe(section))
