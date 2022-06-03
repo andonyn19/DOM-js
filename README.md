@@ -208,3 +208,7 @@ Responsive slider que se puede aplicar a todo sitio web aplicando las siguientes
 - Boton siguiente: class "next"
 - Boton anterior: class "previous"
 
+## 15. Scroll spy
+
+
+## 16. Video inteligente
