@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="./css/filter.css">
   <link rel="stylesheet" href="./css/responsiveSlider.css">
   <link rel="stylesheet" href="./css/scrollSpy.css">
+  <link rel="stylesheet" href="./css/validacionFormulario.css">
 </head>
  
 <body>
@@ -46,7 +47,7 @@
       <a href="#seccion8" data-scroll-spy>Sorteo digital</a>
       <a href="#seccion9" data-scroll-spy>Responsive Slider</a>
       <a href="#seccion10" data-scroll-spy>Video inteligente</a>
-      <a href="#seccion11" data-scroll-spy>Sección 11</a>
+      <a href="#seccion11" data-scroll-spy>Validacion de formulario con JS</a>
       <a href="#seccion12" data-scroll-spy>Sección 12</a>
     </nav>
   </aside>
@@ -201,7 +202,24 @@
     </section>
 
     <section id="seccion11" class="section" data-scroll-spy>
-      <h2>Sección 11</h2>
+      <h2>Validacion de formulario</h2>
+      <form class="contact-form" action="">
+        <legend>Escribe un comentario</legend>
+        <input type="text" name="name" placeholder="Nombre..." title="Dato invalido" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" autocomplete="off" required>
+        <input type="email" name="email" placeholder="Correo..." title="Email invalido" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" autocomplete="off" required>
+        <input type="text" name="subject" placeholder="Asunto..." title="Asunto requerido" autocomplete="off" required>
+        <textarea name="comment" cols="50" rows="5" placeholder="Comentario..." data-pattern="^.{1,255}$" title="El comentario no debe exceder los 255 caracteres" autocomplete="off" required></textarea>
+        <input type="submit" value="Enviar">
+        
+        <div class="contact-form-loader none">
+          <img src="./svg-loader/tail-spin.svg" alt="Cargando...">
+        </div>
+
+        <div class="contact-form-response none">
+          <p>Los datos se han enviado correctamente</p>
+        </div>
+
+      </form>
     </section>
 
     <section id="seccion12" class="section" data-scroll-spy>
