@@ -4,6 +4,9 @@ function validarFormulario() {
   const $contactForm = d.querySelector(".contact-form"),
     $inputs = d.querySelectorAll(".contact-form [required]")
 
+  /*
+    Agregamos "span" a cada "input"
+  */
   $inputs.forEach(input => {
     const $span = d.createElement("span");
     $span.id = input.name;
