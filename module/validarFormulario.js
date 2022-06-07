@@ -17,7 +17,7 @@ function validarFormulario() {
 
   d.addEventListener("keyup", (e) => {
 
-    if (e.target.matches(".contact-form [required")) {
+    if (e.target.matches(".contact-form [required]")) {
       let $input = e.target,
         pattern = e.target.pattern || e.target.dataset.pattern;
 
@@ -38,6 +38,28 @@ function validarFormulario() {
     }
 
   })
+
+  $contactForm.addEventListener("submit", (e)=>{
+    alert("Enviando formulario")
+
+    const $loader = d.querySelector(".contact-form-loader"),
+      $response = d.querySelector(".contact-form-response")
+
+    $loader.classList.remove("none");
+
+    setTimeout(()=>{
+      $loader.classList.add("none");
+      $response.classList.remove("none");
+      $contactForm.reset();
+
+      setTimeout(()=>{
+        $response.classList.add("none");
+      }, 2000)
+
+    }, 2000)
+
+
+  });
 
 }
 
