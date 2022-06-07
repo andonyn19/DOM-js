@@ -210,5 +210,14 @@ Responsive slider que se puede aplicar a todo sitio web aplicando las siguientes
 
 ## 15. Scroll spy
 
+Scroll espia actualiza automaticamente la barra de navegacion dependiendo de donde nos encontremos.
+
 
 ## 16. Video inteligente
+
+## 17. Validar formulario
+
+## 18. Enviar formulario
+
+
+## 19. Narrador
