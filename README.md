@@ -10,13 +10,18 @@ Menu de **hamburguesa** que muestra el menu completo del sitio web.
 
 Importar "HamburgerCSS", puedes utilizar **cdn.js.**
 
-`@param {String} hamburgerBtn: Boton del menu`
-
-`@param {String} panelCompleto: Contenedor elementos del menu (Toggle class "active")`
-
-`@param {String} listaPanel: Lista de elementos del menu dentro del $panel (Toggle class "active" al seleccionar ruta a ir)`
-
+```js
+@param {String} hamburgerBtn: Boton del menu
+```
+```js
+@param {String} panelCompleto: Contenedor elementos del menu (Toggle class "active")
+```
+```js
+@param {String} listaPanel: Lista de elementos del menu dentro del $panel (Toggle class "active" al seleccionar ruta a ir)
+```
+```css
 Class active: transform: translateX(0);
+```
 
 - Toggle element Class using JS.
 - QuerySelector.
@@ -26,19 +31,30 @@ Class active: transform: translateX(0);
 
 Reloj digital que muestra los **dias**, **minutos** y **segundos** despues de inicializar con un botón. 
 
-`@param {String} idActivar: Id elemento -> btn activar`
+```js
+@param {String} idActivar: Id elemento -> btn activar
+```
 
-`@param {String} idDesactivar: Id elemento -> btn desactivar`
+```js
+@param {String} idDesactivar: Id elemento -> btn desactivar
+```
 
-`@param {String} idElement: Elemento donde se va a imprimir la hora`
+```js
+@param {String} idElement: Elemento donde se va a imprimir la hora
+```
 
 Alarma sonora, **sonará** 2 segundos una vez es inicializada.
 
-`@param {String} idActivar: Id elemento -> btn activar`
+```js
+@param {String} idActivar: Id elemento -> btn activar
+```
+```js
+@param {String} idDesactivar: Id elemento -> btn desactivar
+```
 
-`@param {String} idDesactivar: Id elemento -> btn desactivar`
-
-`@param {String} soundLocation: Ruta del archivo de audio`
+```js
+@param {String} soundLocation: Ruta del archivo de audio
+```
 
 - SetInterval.
 - Date Object.
@@ -49,10 +65,12 @@ Alarma sonora, **sonará** 2 segundos una vez es inicializada.
 
 Cuenta regresiva hasta el dia de mi cumpleaños!
 
-`@param {String} idElemento: Elemento donde se va a imprimir la info`
-
-`@param {String} fecha: Fecha a llegar`
-
+```js
+@param {String} idElemento: Elemento donde se va a imprimir la info
+```
+```js
+@param {String} fecha: Fecha a llegar
+```
 - Date Object.
 - Resto (%).
 
@@ -62,7 +80,9 @@ Kinda tricky, ngl.
 
 Uno de mis ejercicios favoritos.
 
-`@param {String} scrollBtn: Clase del boton "Back to Top"`
+```js
+@param {String} scrollBtn: Clase del boton "Back to Top"
+```
 
 A pesar de ser una función que recibe solo 1 **parametro** y son pocas lineas de codigo, siento que es un ejercio muy **util** e **interesante**.
 
@@ -75,8 +95,9 @@ A pesar de ser una función que recibe solo 1 **parametro** y son pocas lineas d
 
 El efecto favorito de muchos, creado utilizando **HTML, CSS** Y algo de **JavaScript**, es fácil de implementar.
 
-`@param {String} btn: Clase del Dark mode Btn`
-
+```js
+@param {String} btn: Clase del Dark mode Btn
+```
 Para aplicar el modo oscuro debes utilizar metadatos en el elemento HTML en especifico **[meta-dark]**.
 
 - Basicamente, toggle de clases.
@@ -89,24 +110,26 @@ Para eso usaremos la propiedad de **Window**.**localStorage**, esto nos va a per
 https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 
 Comenzamos, la primera vez que ingresamos al sitio web, no existe la llave (key) "theme" en localStorage, por lo que inicializamos como "default" o **"light"**:
-
-<pre><code>if (localStorage.getItem("theme") === null) localStorage.setItem("theme", "light")</code></pre>
-
+```js
+if (localStorage.getItem("theme") === null) localStorage.setItem("theme", "light")
+```
 Luego, cuando realizamos un evento "click" con el **"darkModeBtn"**, el valor de la llave (key) va a cambiar utilizando un operador ternario.
 
 Si leemos la llave (key) "theme" y nos devuelve como resultado **"light"**, entonces su nuevo valor sera **"dark"**, de mismo modo, al ocurrir este evento, se esta aplicando o quitando el modo oscuro.
 
-
-<pre><code>localStorage.getItem("theme") === "light" ? 
+```js
+localStorage.getItem("theme") === "light" ? 
 
 localStorage.setItem("theme", "dark") : 
 
-localStorage.setItem("theme", "light")</code></pre>
+localStorage.setItem("theme", "light")
+```
 
 Finalmente, si refrescamos la pagina, el valor de la llave (key) se guarda, pero no aplica ningun cambio, para esto debemos agregar una condicional, **SOLO** si el valor que devuelve la llave "theme" es **dark**.
 
-<pre><code>if(localStorage.getItem("theme") === "dark") btnContent($btn.textContent);
-</code></pre>
+```js
+if(localStorage.getItem("theme") === "dark") btnContent($btn.textContent);
+```
 
 ## 7. Responsible Responsive Design
 
@@ -114,21 +137,28 @@ Leer blog:
 
 https://webdevetc.com/blog/matchmedia-events-for-window-resizes/
 
-`@param {query} query: Breakpoint`
-
-`@param {String} element: Id del elemento a modificar`
-
-`@param {String} mobileContent: Contenido cuando no se cumpla la condicion`
-
-`@param {String} desktopContent: Contenido cuando se cumpla la condicion`
-
+```js
+@param {query} query: Breakpoint
+```
+```js
+@param {String} element: Id del elemento a modificar
+```
+```js
+@param {String} mobileContent: Contenido cuando no se cumpla la condicion
+```
+```js
+@param {String} desktopContent: Contenido cuando se cumpla la condicion
+```
 Creamos una variable para el breakpoint:
 
-<pre><code>const myQuery = w.matchMedia(query)</code></pre>
-
+```js
+const myQuery = w.matchMedia(query);
+```
 Luego, se asigna un evento "change" que se dispara cuando confirma un cambio:
 
-<pre><code> myQuery.addEventListener("change", (e) => displayContent(e))</code></pre>
+```js
+myQuery.addEventListener("change", (e) => displayContent(e))
+```
 
 - Window.matchMedia(query).
 - Evento "change"
@@ -137,14 +167,16 @@ Luego, se asigna un evento "change" que se dispara cuando confirma un cambio:
 
 Ejercicio "simple", recibimos los valores del formulario con el atributo **"name"** de cada **input**.
 
-`@param {String} form: Id del formulario`
+```js
+@param {String} form: Id del formulario
+```
 
 https://www.javatpoint.com/javascript-window-close-method#:~:text=JavaScript%20provides%20an%20in%2Dbuilt,does%20not%20contain%20any%20parameter.
 
-<pre><code>let newWindow = Window.open(URL, name, newWindowConfiguration)
-
-newWindow.close()
-</code></pre>
+```js
+let newWindow = Window.open(URL, name, newWindowConfiguration);
+newWindow.close();
+```
 
 - Window.open().
 
@@ -160,7 +192,9 @@ Principalmente nos permite conocer desde que dispositivo visitan nuestro sitio w
 
 Nos permite conocer el estado de la red, esta función no recibe ningun parametro, lo que si necesitamos es el evento **online/offline** de la interfaz Window.
 
-<pre><code>window.addEventListener(online/offline , _ => (funcion))</code></pre>
+```js
+window.addEventListener(online/offline , _ => (funcion))
+```
 
 https://lenguajejs.com/javascript/dom/insertar-elementos-dom/#los-m%C3%A9todos-insertadjacent
 
@@ -173,31 +207,45 @@ Nos permite conocer las coordenadas del usuario, al **aceptar** el permiso, se p
 
 El metodo **getCurrentPosition** recibe 3 argumentos; el metodo de exito, de error y un objeto de opciones (presision alta, tiempo maximo de respuesta, cache).
 
-<pre><code> n.geolocation.getCurrentPosition(successCallBack, errorCallBack, options);</code></pre>
+```js
+n.geolocation.getCurrentPosition(successCallBack, errorCallBack, options);
+```
 
 ## 12. Filtros de busqueda 
 
 Nos permite filtrar una lista de elementos con el valor que escribamos en el elemento **input**. 
 
-`@param {String} input: Referencia al input que va a buscar`
+```js
+@param {String} input: Referencia al input que va a buscar
+```
 
-`@param {String} selector: Selector que va a buscar en propiedad textContent`
+
+```js
+@param {String} selector: Selector que va a buscar en propiedad textContent
+```
 
 Dependiendo de el valor que se ingresa en la etiqueta input:
 
-<pre><code>card.textContent.toLowerCase().includes(e.target.value.toLowerCase())</code></pre>
-
+```js
+card.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+```
 Se elimina o agrega la clase **"filter"**
 
-<pre><code>card.classList.remove("filter") || card.classList.add("filter")</code></pre>
+```js
+card.classList.remove("filter") || card.classList.add("filter")
+```
 
 ## 13. Sorteo digital
 
 Obtiene 1 elemento **random** de una lista de elementos.
 
-`@param {String} list: Selector valido para CSS`
+```js
+@param {String} list: Selector valido para CSS
+```
 
-`@param {String} btn: Btn del sorteo`
+```js
+@param {String} btn: Btn del sorteo
+```
 
 - Math.random()
 - CSS Selectors.
@@ -214,11 +262,12 @@ Para que la imagen se muestre vamos a jugar con la clase "active", agregando o e
 
 El primer **slider** debe llevar la clase "active".
 
-<pre><code>.active {
+```css
+.active {
   opacity: 1;
   visibility: visible;
 }
-</code></pre>
+```
 
 ## 15. Scroll spy
 
@@ -226,27 +275,39 @@ Scroll espia actualiza automaticamente la barra de navegacion dependiendo de don
 
 Primero, vamos a selecccionar todas las tags que tengan en sus atributos **[data-scroll-spy]**
 
-<pre><code>const $section = document.querySelectorAll(`section[data-scroll-spy]`)</code></pre>
+```js
+const $section = document.querySelectorAll(`section[data-scroll-spy]`)
+```
 
 Vamos a crear una variable "observer" que es de tipo **IntersectionObserver**, que recibe 2 argumentos, una funcion y opciones.
 
-<pre><code>const observer = new IntersectionObserver(callback, params);</code></pre>
+```js
+const observer = new IntersectionObserver(callback, params);
+```
 
 Esta variable va a observar a cada uno de los elementos que hemos almacenado, con su metodo **observe**.
 
-<pre><code>$section.forEach(section => observer.observe(section))</code></pre>
+```js
+$section.forEach(section => observer.observe(section))
+```
 
 El callback de la variable **observer** va a recibir como paramtro un arreglo de los elementos que esta observando, por lo que debemos recorrer el arreglo para saber si se estan intersectando.
 
-<pre><code> if (entry.isIntersecting) </code></pre>
+```
+if (entry.isIntersecting)
+```
 
 Si se cumple, entonces, se busca el elemento de la barra de navegación que tenga como **id** el id de **entry**.
 
-<pre><code>d.querySelector(`a[data-scroll-spy][href="#${id}"]`)</code></pre>
+```js
+d.querySelector(`a[data-scroll-spy][href="#${id}"]`)
+```
 
 Para agregar la clase "active" que va a cambiar el color del bg.
 
-<pre><code>classList.add("active")</code></pre>
+```js
+classList.add("active")
+```
        
 Finalmente, las opciones que recibe el variable observer, es **threshold** que se va a activar cuando tenga una visibilidad del 50-75%. **[0.5, 0.75]**.
 
@@ -258,19 +319,25 @@ Luego de conocer como funciona el tipo de dato **IntersectionObserver** para rea
 
 Para este ejercicio tambien realizamos los pasos de crear una variable **observer** tipo IntersectionObserver que va a *observar* con tu metodo **observe** a todos los videos con el atributo [data-smart-video].
 
-<pre><code>const $videos = d.querySelectorAll("video[data-smart-video]");</code></pre>
+```js
+const $videos = d.querySelectorAll("video[data-smart-video]");
+```
 
 En el callback de la variable **observer** recorremos los datos y si, se esta *intersectando* entonces el video se va a reproducir automaticamente.
 
-<pre><code>(entry.isIntersecting) ?
+```js
+(entry.isIntersecting) ?
 entry.target.play() :
-entry.target.pause()</code></pre>
+entry.target.pause()
+```
 
 Si queremos que el video se detenga cuando cambiemos de pantalla, debemos hacer un evento en el objeto **window**, con el evento **visibilitychange**.
 
-<pre><code>d.visibilityState === "visible" ?
+```js
+d.visibilityState === "visible" ?
   entry.target.play() :
-  entry.target.pause()</code></pre>
+  entry.target.pause()
+```
 
 - Tipo de dato IntersectionObserver.
 - Atributos HTML.
@@ -280,13 +347,17 @@ Si queremos que el video se detenga cuando cambiemos de pantalla, debemos hacer 
 
 Primero debemos obtener todos los elementos que esten dentro de el formulario que tengan el atributo **required**.
 
-<pre><code>$inputs = d.querySelectorAll(".contact-form [required]")</code></pre>
+```js
+$inputs = d.querySelectorAll(".contact-form [required]")
+```
 
 Despues, creamos una etiqueta **span** por cada input, y le agremos la clase **none** para no representarlo/"ocultarlo".
 
 Recorremos **$inputs** y agremos el span luego de cada **input**.
 
-<pre><code>input.insertAdjacentElement("afterend", $span);</code></pre>
+```js
+input.insertAdjacentElement("afterend", $span);
+```
 
 Realizamos una delegacion de evento **keyup**, que si se esta realizando en un input, dependiendo si se esta cumpliendo la expresion regular se agrega o quita la clase **"is-active"** de cada input.
 
@@ -300,7 +371,9 @@ https://formsubmit.co/
 
 Para que funcione debemos agregar los siguiente atributos al formulario.
 
-<pre><code>action="https://formsubmit.co/your@email.com" method="POST" target="_blank"</code></pre>
+```html
+<form action="https://formsubmit.co/your@email.com" method="POST" target="_blank">
+```
 
 Y listo :D .
 
@@ -310,18 +383,26 @@ El ultimo ejercicio de la seccion de videos, para esto debemos tener 4 constante
 
 La opcion del menu:
 
-<pre><code>$speechSelect = d.getElementById("speech-select")</code></pre>
+```js
+$speechSelect = d.getElementById("speech-select")
+```
 
 El texto:
 
-<pre><code>$speechTextArea = d.getElementById("speech-text")</code></pre>
+```js
+$speechTextArea = d.getElementById("speech-text")
+```
 
 El boton submit:
 
-<pre><code>$speechBtn = d.getElementById("speech-btn")</code></pre>
+```js
+$speechBtn = d.getElementById("speech-btn")
+```
 
 Finalemnte, creamos una constante tipo **SpeechSynthesisUtterance**, que es una API del navegador que representa una solicitud de voz.
 
-<pre><code>speechMessage = new SpeechSynthesisUtterance();</code></pre>
+```js
+speechMessage = new SpeechSynthesisUtterance();
+```
 
 https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance
